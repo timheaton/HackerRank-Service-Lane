@@ -1,54 +1,14 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-
-# C extensions
-*.so
-
-# Distribution / packaging
-.Python
-env/
-bin/
-build/
-develop-eggs/
-dist/
-eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.coverage
-.cache
-nosetests.xml
-coverage.xml
-
-# Translations
-*.mo
-
-# Mr Developer
-.mr.developer.cfg
-.project
-.pydevproject
-
-# Rope
-.ropeproject
-
-# Django stuff:
-*.log
-*.pot
-
-# Sphinx documentation
-docs/_build/
-
+d = raw_input()
+d2 = d.split(" ",2)
+l = d2[0]
+t = int(d2[1])
+c = raw_input()
+c2  = c.replace(" ",'')
+for i in range (t):
+    a = raw_input()
+    a2 = a.split(" ",2)
+    j = int(a2[0])
+    k = int(a2[1]) 
+    x = min(c2[j:k+1])
+    print(x)
+    t -= 1
